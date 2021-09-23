@@ -1,6 +1,7 @@
 #!/bin/sh
 
-echo "Hello, username!"
+USERNAME=$(git config user.name)
+echo "Hello, ${USERNAME}!"
 echo "You can find here only empty files:"
 
 ls empty*
